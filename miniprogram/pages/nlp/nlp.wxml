@@ -1,0 +1,15 @@
+<!--pages/nlp/nlp.wxml-->
+<view class="icon-item">
+  <l-icon name="soud" />
+</view>
+<view class="word">
+ <text >说出你要搜的垃圾~</text>
+</view>
+
+<!-- <view class="margin-left margin-right" style="">
+  <wux-divider showText='{{false}}'></wux-divider>
+</view> -->
+
+<image class="camera" src="cloud://gabage-2020.6761-gabage-2020-1300893497/话筒.png" mode="aspectFit">
+</image>
+<text class="rec">按住说话</text>

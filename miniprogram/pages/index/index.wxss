@@ -1,0 +1,7 @@
+/* pages/index/index.wxss */
+.tabbar-wrapper{
+  width: 750rpx;
+  bottom: 10rpx;
+  position: absolute;
+  margin-left: -20rpx;
+}

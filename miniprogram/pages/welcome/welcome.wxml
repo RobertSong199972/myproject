@@ -1,0 +1,99 @@
+<view class="container">
+  <view class="DrawerPage {{modalName=='viewModal'?'show':''}}">
+   <view class="con {{modalName=='viewModal'?'show':''}}">
+      <view class="cu-bar bg-white search fixed" style="top:{{CustomBar}}px">
+       <view class="search-form round">
+        <text class="cuIcon-search"></text>
+        <input type="text" placeholder="搜索" confirm-type="search"        bindinput="searchIcon"></input>
+       </view>
+      </view>
+      <!--头像-->
+      <view class="flex justify-between align-center" style="padding-top:60px;">
+        <view bindtap="showModal" data-target="viewModal" style="width:150rpx;">
+          <text class="cuIcon-moreandroid margin-left"></text>
+          <view class="cu-avatar round margin-left-xs" style="background-image:url({{avatarUrl}});">
+          </view>
+        </view>
+        <view class="icon-item" bindtap="tomap">
+          <l-icon name="address" />
+        </view>
+      </view>
+     
+      <view class="cu-modal {{modalName=='DialogModal'?'show':''}}">
+        <view class="cu-dialog">
+          <view class="cu-bar bg-white justify-end">
+            <view class="content">温馨提示</view>
+              <view class="action" bindtap="hideModal">
+                <text class="cuIcon-close text-red"></text>
+              </view>
+            </view>
+          <view class="padding-xl">
+            您当前未登陆，部分功能无法使用，是否前往登陆
+          </view>
+          <view class="cu-bar bg-white">
+           <view class="action margin-0 flex-sub solid-left" bindtap="hideModal">取消</view>
+           <view class="action margin-0 flex-sub text-green solid-left" bindtap="goToLogin">确定</view>
+            
+          </view>
+        </view>
+      </view>
+
+      
+      <view class="card-top">
+        <view class="card-dot"></view>
+        <view class="content-name">你常分错的垃圾有.....</view>
+      </view>
+  
+      <view style="top:250px; position:absolute;width:100%;">
+        <l-card type="primary" l-class="card" image="https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1549701108&di=d141540da70a7f92abd6f90ffef7460c&src=http://ztd00.photos.bdimg.com/ztd/w=700;q=50/sign=0b1f180b5a43fbf2c52ca4238045bbbd/b7fd5266d0160924665b9f18dd0735fae6cd34b2.jpg" title="果核" style="border-radius:20px;">
+          <view class="content1">
+            新疆苹果,又名塞威氏苹果,蔷微科,落叶乔木。
+           </view>
+        </l-card>
+      </view>
+   </view>
+  </view>
+
+  <view class="DrawerClose {{modalName=='viewModal'?'show':''}}" bindtap="hideModal">
+    <text class="cuIcon-pullright"></text>
+  </view>
+
+  <view class="DrawerWindow {{modalName=='viewModal'?'show':''}}">
+    <view class="flex flex-direction align-center justify-center margin padding">
+      <view class="cu-avatar xl round margin-left" style="background-image:url({{avatarUrl}});"></view>
+      <view class="margin-top-xl text-theme text-xl">
+        <text>{{nickName}}\n</text>
+      </view>
+    </view>
+
+   
+    <view class="margin-left margin-right">
+      <wux-divider showText='{{false}}'></wux-divider>
+    </view>
+    
+    <content-card class="content" >
+      <l-list title="我的测试" icon="edit" bindtap="totest" />
+      <l-list title="我的数据" icon="research" bindtap="todata" />
+      <l-list title="关于我们" image="cloud://gabage-2020.6761-gabage-2020-1300893497/image/关于我们.png" bindtap="tous" />
+      <l-list title="意见反馈" icon="comment" open-type="feedback" />
+    </content-card>
+
+   
+    <view class="exit" bindtap="logOut">
+      <view>
+        <view class="margin-left margin-right">
+          <wux-divider showText='{{false}}'></wux-divider>
+        </view>
+        <view class="padding-left padding-right flex justify-between align-center">
+          <view class="flex justify-start align-center">
+            <text class="cuIcon-exit margin-right-xs" style="font-size: 40rpx;"></text>
+            <text class="text-lg">退出登录</text>
+          </view>
+          <!-- <view>
+            <text class="cuIcon-right"></text>
+          </view> -->
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

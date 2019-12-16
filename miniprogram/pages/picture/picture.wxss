@@ -1,0 +1,33 @@
+/* pages/image/image.wxss */
+.icon-item {
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 33.3%;
+  left: 20px;
+  top:50px;
+}
+.word{
+  position: absolute;
+  left: 70px;
+  top:56px;
+  font-size:20px;
+
+}
+.camera{
+  height: 100px;
+  width: 275px;
+  bottom:150px;
+  left:50px;
+  right:50px;
+  position: absolute;
+}
+.rec{
+  font-size:20px;
+  width: 275px;
+  bottom:110px;
+  left:145px;
+  
+  position: absolute;
+}

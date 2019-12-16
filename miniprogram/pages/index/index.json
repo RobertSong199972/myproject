@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "nlp": "/pages/nlp/nlp",
+    "picture": "/pages/picture/picture",
+    "welcome":"/pages/welcome/welcome"
+  }
+}

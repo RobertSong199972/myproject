@@ -1,0 +1,149 @@
+/* pages/welcome/welcome.wxss */
+@import "../../colorui/animation.wxss";
+@import "../../colorui/main.wxss";
+@import "../../colorui/icon.wxss";
+page{
+  height:100%;
+}
+.container{
+  height: 100%;
+  display: flex;
+}
+.DrawerPage {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0vw;
+  /*background: rgba(252, 251, 247, 1);*/
+  transition: all 0.5s;
+  
+}
+.con.show{
+  transform:scale(0, 0)
+}
+.DrawerPage.show {
+  transform: scale(1,1);
+  left: 90vw;
+  /* box-shadow: 0 0 60rpx rgba(0, 0, 0, 0.2); */
+  transform-origin: 0;
+}
+
+.DrawerWindow {
+  position: absolute;
+  width: 85vw;
+  height: 100vh;
+  left: 7vw;
+  top: 0;
+  transform: scale(0.9, 0.9) translateX(-100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+
+.DrawerWindow.show {
+  transform: scale(1, 1) translateX(0%);
+  opacity: 1;
+  pointer-events: all;
+}
+
+.DrawerClose {
+  position: absolute;
+  width: 40vw;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  color: transparent;
+  padding-bottom: 50rpx;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  /* background-image: linear-gradient(90deg, #ede9e3, #ede9e3); */
+  letter-spacing: 5px;
+  font-size: 50rpx;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+
+.DrawerClose.show {
+  opacity: 1;
+  pointer-events: all;
+  width: 10vw;
+  color: #fff;
+}
+.button {
+display: block;
+margin-left: auto;
+margin-right: auto;
+padding-left: 14px;
+padding-right: 14px;
+box-sizing: border-box;
+font-size: 22px;
+text-align: center;
+text-decoration: none;
+line-height: 2.55555556;
+border-radius: 5px;
+-webkit-tap-highlight-color: transparent;
+overflow: hidden;
+color: #7d735d;
+background-color: transparent;
+font-family: ""
+}
+button::after{
+border:none;
+}
+.card-dot {
+  width: 18rpx;
+  height: 18rpx;
+  border-radius: 50%;
+  border: 6rpx solid #468966;
+  margin-left: 26rpx;
+
+}
+.card-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 750rpx;
+  height: 100rpx;
+  top: 200px;
+  position: absolute;
+}
+.content-name {
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: #b64926;
+  line-height: 20px;
+  margin-left: 8px;
+}
+
+.tabbar-wrapper{
+  width: 750rpx;
+  bottom: 10rpx;
+  position: absolute;
+  margin-left: -20rpx;
+}
+.icon-item {
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 33.3%;
+  right: -80px;
+}
+.content1 {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 34rpx
+}
+.exit{
+  width: 100%;
+  position: absolute;
+  bottom:0;
+  height:80px;
+  /* z-index:1024; */
+}

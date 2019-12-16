@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/welcome/welcome",
+    "pages/my/my",
+    "pages/map/map",
+    "pages/picture/picture",
+    "pages/nlp/nlp",
+    "pages/login/login",
+    "pages/test/test",
+    "pages/data/data",
+    "pages/us/us",
+    "pages/recong/recong"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#468966",
+    "navigationBarTitleText": "垃圾分类！",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "usingComponents": {
+    "l-icon": "/dist/icon/index",
+    "cu-custom": "/colorui/components/cu-custom",
+    "content-title": "/components/content-title/index",
+    "content-card": "/components/content-card/index",
+    "l-tabbar": "/dist/custom-tab-bar/index",
+    "l-button": "/dist/button/index",
+    "l-card": "/dist/card/index",
+    "l-tag": "/dist/tag/index"
+  }
+
+}

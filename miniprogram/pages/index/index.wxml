@@ -1,0 +1,31 @@
+<!--pages/index/index.wxml-->
+
+
+      <!--导航栏-->
+      <welcome wx:if="{{PageCur=='welcome'}}"></welcome>
+      <picture wx:if="{{PageCur=='picture'}}"></picture>
+      <nlp wx:if="{{PageCur=='nlp'}}"></nlp>
+      <view class="cu-bar tabbar bg-white shadow foot" wx:if="{{show==false}}">
+        <view class="action" bindtap="NavChange" data-cur="picture">
+         <view class='cuIcon-cu-image'>
+          <image src="/images/tabbar/picture{{PageCur=='picture'?'_cur':''}}.png"></image>
+         </view>
+         <view class="{{PageCur=='picture'?'text-green':'text-gray'}}">拍照识别</view>
+        </view>
+  
+       <view class="action text-gray add-action" bindtap="NavChange" data-cur="welcome">
+        <view class='cuIcon-cu-image'>
+          <image src="/images/tabbar/welcome{{PageCur=='welcome'?'_cur':''}}.png" ></image>
+        </view>
+        <view class="{{PageCur=='welcome'?'text-green':'text-gray'}}">首页</view>
+       </view>
+
+       <view class="action" bindtap="NavChange" data-cur="nlp">
+        <view class='cuIcon-cu-image'>
+          <image src="/images/tabbar/nlp{{PageCur=='nlp'?'_cur':''}}.png"></image>
+        </view>
+        <view class="{{PageCur=='nlp'?'text-green':'text-gray'}}">语音识别</view>
+       </view>
+      </view>
+
+ 

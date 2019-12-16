@@ -1,0 +1,41 @@
+/**index.wxss**/
+
+page {
+  width:750rpx;
+  height: 100%;
+}
+
+.container{
+  height: 100%;
+}
+
+.text{
+  text-align:center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "poem";
+  font-size: 60rpx;
+  height: 300rpx;
+}
+
+.image1{
+  display: flex;
+  justify-content: center;
+}
+
+.image1 image{
+  width: 750rpx;
+}
+
+.image2{
+  display: flex;
+  justify-content: center;
+}
+
+.image2 image{
+  width: 320rpx;
+  height: 300rpx;
+}
+

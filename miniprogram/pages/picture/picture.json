@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "wux-divider": "/dist/divider/index"
+  },
+  "navigationBarTitleText": "拍照识别"
+}

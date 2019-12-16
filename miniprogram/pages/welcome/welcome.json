@@ -1,0 +1,9 @@
+{
+"component": true,
+"usingComponents": {
+  "wux-divider":"/dist/divider/index",
+  "navi-content": "/components/navi-content/index",
+  "content-card": "/components/content-card/index",
+  "l-list": "/dist/list/index"
+}
+}

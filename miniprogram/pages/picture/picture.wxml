@@ -1,0 +1,17 @@
+<!--pages/image/image.wxml-->
+<view class="icon-item">
+  <l-icon name="picture" />
+</view>
+<view class="word">
+ <text >拍下你手中的垃圾</text>
+</view>
+
+<!-- 
+<view class="margin-left margin-right" style="">
+  <wux-divider showText='{{false}}'></wux-divider>
+</view> -->
+
+<image class="camera" src="cloud://gabage-2020.6761-gabage-2020-1300893497/相机.png" mode="aspectFit" bindtap="pic">
+</image>
+<text class="rec">点击拍照</text>
+
