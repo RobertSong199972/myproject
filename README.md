@@ -6,7 +6,8 @@
 
 ###### 1、logistic回归拟合疫情曲线
 
-生物中学的增长模型，类似S曲线的拟合，阅读文章：https://www.jianshu.com/p/4c90f8f7c1c1，代码为logistic.py拟合结果如下图（横坐标代表1月20号开始累增）：
+生物中学的增长模型，类似S曲线的拟合，阅读文章：https://www.jianshu.com/p/4c90f8f7c1c1
+代码为logistic.py拟合结果如下图（横坐标代表1月20号开始累增）：
 
 ![image-20200511221956915](images/1.png)
 
